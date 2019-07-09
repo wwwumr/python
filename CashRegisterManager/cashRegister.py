@@ -39,7 +39,7 @@ def inputItems():
             print("对不起,您输入的数据的格式不正确,请重新输入")
             continue
         # 取价格和数量，价格保留一位小数
-        itemPrice = round(eval(itemPrice) * 100.0, 1) / 100.0
+        itemPrice = round(eval(itemPrice) , 1)
         itemAmount = eval(itemAmount)
         item[0] = itemPrice
         item[1] = itemAmount
@@ -52,7 +52,7 @@ def inputItems():
         itemList.append(item)
 
         # 提示结束输入
-        if input("您是否还要结束输入商品信息?按[Y]退出").lower() == 'y':
+        if input("您是否要结束输入商品信息?按[Y]退出").lower() == 'y':
             break
     # 获取总价格和总数量
     totalAmount = 0
