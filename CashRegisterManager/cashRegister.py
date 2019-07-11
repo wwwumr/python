@@ -68,7 +68,7 @@ def inputItems():
 def printItemList(itemList, totalAmount, totalPrice):
     # 以时间名做文件名生成订单
     orderFile = time.strftime("./transactions/%Y-%m-%d-%H-%M-%S.txt", time.localtime())
-    fileWriter = open(orderFile, 'w', encoding="utf-8")
+    fileWriter = open(orderFile, "w+", encoding="utf-8")
     fileWriter.seek(0, 0)
     # 将订单写入文件
     for i in range(len(itemList)):
