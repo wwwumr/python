@@ -1,4 +1,4 @@
-import Tkinter as tk
+import tkinter as tk
 from time import sleep,clock
 from random import randrange
 import gc, sys, winsound, threading
@@ -199,7 +199,7 @@ class Hero(Clip):
                 self.trans = True
                 self.y -= 16
         else:
-            print "other"
+            print("other")
     def bigger(self):
         if self.play:
             self.setRange(self.range[0]+self.num*2,
@@ -1326,5 +1326,5 @@ if __name__ == '__main__':
     MAP = ".%s" %MAP
     AUDIO = ".%s" %AUDIO
     IMAGE = ".%s" %IMAGE
-    print main(tk.Tk()),"GAME OVER"
+    print(main(tk.Tk()),"GAME OVER")
     if not closed: winClose()
